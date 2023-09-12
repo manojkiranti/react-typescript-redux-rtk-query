@@ -1,0 +1,45 @@
+.logo-bottom {
+    display: inline-flex;
+    align-items: center;
+
+    .logo-text {
+        text-transform: uppercase;
+        color: $primary;
+        border-style: solid;
+        border-width: 1px 0 1px 1px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        border-color: $primary;
+        padding: 3px 20px;
+        font-size: 12px;
+    }
+
+    .logo-bottom-image {
+        background-color: $primary;
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+
+        .logo-top {
+            margin-bottom: 22px;
+
+            >img {
+                width: 36px;
+            }
+        }
+
+        .logo-btm {
+            position: absolute;
+            bottom: 17px;
+            left: 15px;
+
+            >img {
+                height: 11px;
+            }
+        }
+    }
+}

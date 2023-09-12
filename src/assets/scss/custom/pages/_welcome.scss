@@ -1,0 +1,24 @@
+.welcome-image {
+  >img {
+    max-height: 380px;
+  }
+
+  .init-welcome-image {}
+
+  .secondary-welcome-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  &.active {
+    .init-welcome-image {
+      opacity: 0;
+    }
+
+    .secondary-welcome-image {
+      opacity: 1;
+    }
+  }
+}

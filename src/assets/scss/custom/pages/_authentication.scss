@@ -1,0 +1,38 @@
+// 
+// authentication.scss
+//
+.auth-page-content {
+    background: $white;
+}
+
+.auth-content {
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+// authentication pages background
+.auth-bg {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        background-color: #000;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        opacity: .5;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
